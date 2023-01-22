@@ -1,0 +1,38 @@
+{
+    "name": "tym/http-message-compression",
+    "description": "The Smart HTTP message compression package.",
+    "keywords": [
+        "http",
+        "message",
+        "compression"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yvan Tchuente",
+            "email": "yvantchuente@gmail.com"
+        }
+    ],
+    "require": {
+        "psr/http-message": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "tym/http-message": "^1.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Tym\\Http\\Message\\Compression\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
